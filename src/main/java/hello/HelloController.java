@@ -11,4 +11,9 @@ public class HelloController {
         return "Greetings from Spring Boot!";
     }
     
+    private void test() {
+		System.out.println("Esta funcion hará algo en el futuro....");
+
+	}
+    
 }
