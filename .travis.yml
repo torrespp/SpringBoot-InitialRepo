@@ -11,6 +11,9 @@ before_install:
   - export PATH=$PWD/apache-maven-3.3.9/bin:${PATH}
   - hash -r
 
+ -./gradlew check
+-./gradlew assemble
+
 cache:
   directories:
     - $HOME/.m2
