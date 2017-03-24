@@ -1,11 +1,10 @@
----
 language: java
 
-# get us on the new container based builds, we're not using any fancyness
+jdk:
+  - oraclejdk8
+
 sudo: false
 
-#./gradlew check
-#./gradlew assemble
 
 before_install:
   - wget http://apache.claz.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
@@ -15,11 +14,11 @@ before_install:
   - export PATH=$PWD/apache-maven-3.3.9/bin:${PATH}
   - hash -r
 
+
 cache:
   directories:
     - $HOME/.m2
 
-script: mvn -q install -P examples
 
 #jdk:
 #- openjdk7

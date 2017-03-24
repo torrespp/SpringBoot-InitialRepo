@@ -16,9 +16,12 @@ public class HelloController {
 
 	}
     
+<<<<<<< HEAD
+=======
 private void HelloWorld() {
 	// TODO Auto-generated method stub
 System.out.println("The task number 6 change");
 }
     
+>>>>>>> 7ea81b7e44f219de0578e2e64167d5a15718fbef
 }

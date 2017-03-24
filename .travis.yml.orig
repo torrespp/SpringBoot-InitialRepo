@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 language: java
 
@@ -6,6 +7,15 @@ sudo: false
 
 #./gradlew check
 #./gradlew assemble
+=======
+language: java
+
+jdk:
+  - oraclejdk8
+
+sudo: false
+
+>>>>>>> 7ea81b7e44f219de0578e2e64167d5a15718fbef
 
 before_install:
   - wget http://apache.claz.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
@@ -15,10 +25,15 @@ before_install:
   - export PATH=$PWD/apache-maven-3.3.9/bin:${PATH}
   - hash -r
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7ea81b7e44f219de0578e2e64167d5a15718fbef
 cache:
   directories:
     - $HOME/.m2
 
+<<<<<<< HEAD
 script: mvn -q install -P examples
 
 #jdk:
@@ -46,6 +61,9 @@ script: mvn -q install -P examples
 #branches:
 #  only:
 #  - master
+=======
+
+>>>>>>> 7ea81b7e44f219de0578e2e64167d5a15718fbef
 
 notifications:
   email:
