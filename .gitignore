@@ -45,3 +45,9 @@ Thumbs.db
 .project
 .settings/
 #deleteChangedFiles.sh
+
+.classpath
+.settings
+/target
+/target/*
+.settings/*
